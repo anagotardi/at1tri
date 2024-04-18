@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AC - WebDev</title>
-    <link rel="stylesheet" href="sobre.css">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+    
 </head>
+
 <body>
+    <header>
+        <nav class="nav">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-
-        <div class="inicio">
-            <h1>Dúvidas e</h1>
-            <h1>suporte , entre</h1>
-            <h1>em contato</h1>
+    <main class="linha">
+        <div class="column-left">
+            <h1>Dúvidas e </h1>
+            <h1>suporte, entre</h1>
+            <h1>em contato:</h1>
+            
         </div>
 
-        <div class="social">
-            <img src="img/twitter.jpeg" alt="">
-            <img src="img/instagramlogo.png" alt="">
-            <img src="img/discord.png" alt="">
+        <div class="">
+            <section id="contact">
+                <form>
+                    <label for="nome">Nome: </label>
+                    <input type="text" placeholder="">
+                    <label for="nome">E-mail: </label>
+                    <input type="email" placeholder="">
+                    <label for="nome">Mensagem: </label>
+                    <textarea placeholder=""></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
         </div>
-    </div>
+
+    </main>
+
+    
+    
+
 </body>
 </html>

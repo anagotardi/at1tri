@@ -1,57 +1,108 @@
 body {
     font-family: 'Roboto Mono', monospace;
-    margin: 0;
-    padding: 0;
 }
 
-nav {
-    background-color: #ffffff;
-    padding: 20px;
+/*header + nav*/
+header {
+    background-color: white;
+    width: 100%; 
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.nav {
     text-align: center;
+    margin-top: 0;
 }
 
-li {
-    display: inline;
-}
-
-a {
+.nav a {
+    color: #333333;
     text-decoration: none;
-    color: rgb(51,51,51);
     padding: 10px 20px;
 }
 
-a:hover {
-    color: #7a7a7a;
+.nav a.active {
     text-decoration: underline;
+    color: #333333;
 }
 
-.container {
+
+/*formulario*/
+#contact{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+
+#contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  
+#contact form input,
+#contact form textarea{
+    margin: 20px 50px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 100px;
+    border: solid 0.5px #E4E4E4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+#contact form button {
+    width: 20%;
+    border-radius: 100px;
+    border: none;
+    background-color: #6975E8;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+label {
+    font-weight: 400;
+}
+
+
+/*alinhamento*/
+.column-left{
+  width: 30%;
+  margin: 0 10%;
+  font-family: 'Roboto mono', monospace;
+  color: rgb(53, 53, 53);
+}    
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  height: 311px;
+  width: 661px;
+  margin: 8px 8px;
+  width: 100%;
+  height: auto;
+  
+} 
+
+
+
+#contact form input,
+#contact form textarea {
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+#contact form button {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+}
+
+.linha h1{
     text-align: center;
-}
-
-.inicio {
-    padding: 40px;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.social img {
-    width: 50px; /* Tamanho das imagens */
-    height: 50px;
-    border-radius: 50%; /* Transforma em círculo */
-    margin: 0 10px; /* Espaçamento entre as imagens */
+    margin-top: 100px;
 }
