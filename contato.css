@@ -1,130 +1,40 @@
-body {
-    font-family: 'Roboto Mono', monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/*header + nav*/
-header {
-    background-color: white;
-    width: 100%; 
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-}
-
-.nav {
-    text-align: center;
-    margin-top: 0;
-}
-
-.nav a {
-    color: #333333;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.nav a.active {
-    text-decoration: underline;
-    color: #333333;
-}
-
-
-/*formulario*/
-#contact{
-    text-align: left;
-    margin-top: 100px;
-    margin-left: 100px;
-  }
-
-#contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-#contact form input,
-#contact form textarea{
-    margin: 20px 50px;
-    width: 50%;
-    padding: 10px;
-    border-radius: 100px;
-    border: solid 0.5px #E4E4E4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-#contact form button {
-  margin-left: 100px;
-    width: 20%;
-    border-radius: 100px;
-    border: none;
-    background-color: #6975E8;
-    color: white;
-    padding: 10%;
-    cursor: pointer;
-    font-family: 'Roboto Mono', monospace;
-    font-size: large;
-  }
-
-label {
-    font-weight: 400;
-}
-
-
-/*alinhamento*/
-.column-left{
-  width: 30%;
-  margin: 0 10%;
-  font-family: 'Roboto mono', monospace;
-  color: rgb(53, 53, 53);
-}    
-
-.linha {
-  display: flex;
-  flex-direction: row;
-  height: 311px;
-  width: 661px;
-  margin: 8px 8px;
-  width: 100%;
-  height: auto;
-  
-} 
 
 body {
   font-family: 'Roboto Mono', monospace;
 }
 
-/*header + nav*/
-header {
-  background-color: white;
-  width: 100%; 
-  height: 70px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
+nav {
+  background-color: #ffffff;
+  padding: 20px;
 }
 
-.nav {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  margin-top: 0;
 }
 
-.nav a {
-  color: #333333;
+li {
+  display: inline;
+}
+
+a {
   text-decoration: none;
+  color: rgb(51,51,51);
   padding: 10px 20px;
 }
 
-.nav a.active {
+a:hover {
+  color: #7a7a7a;
   text-decoration: underline;
-  color: #333333;
 }
 
-
-/*formulario*/
 #contact {
   text-align: left;
   margin-top: 100px;
@@ -143,28 +53,28 @@ header {
   width: 50%;
   padding: 10px;
   border-radius: 100px;
-  border: solid 0.5px #E4E4E4;
+  border: solid 0.5px #e4e4e4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #contact form button {
-  margin-left: 100px;
-  width: 20%;
+  margin: 20px 40px; /* Ajuste de margem */
+  width: 30%; /* Ajuste de largura */
+  margin-left: 220px;
   border-radius: 100px;
   border: none;
-  background-color: #6975E8;
+  background-color: #6975e8;
   color: white;
-  padding: 10%;
+  padding: 10px;
   cursor: pointer;
   font-family: 'Roboto Mono', monospace;
   font-size: large;
 }
 
-label {
-  font-weight: 400;
+.form{
+  width: 300px;
 }
 
-/*alinhamento*/
 .column-left {
   width: 30%;
   margin: 0 10%;
@@ -198,25 +108,34 @@ label {
   margin: 0 10px;
 }
 
-
 #contact form input,
 #contact form textarea {
-    width: 100%; 
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 #contact form button {
-    width: 100%; 
-    box-sizing: border-box; 
-    margin-top: 10px; 
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
 }
 
-.linha h1{
-    text-align: center;
-    margin-top: 100px;
+.linha h1 {
+  text-align: left;
+  margin-top: 50px; /* Reduzindo a margem superior */
+  margin-bottom: 0px; /* Reduzindo a margem inferior */
 }
 
 .imagem {
   width: fit-content;
 }
 
+.vertical-line {
+  border-left: 1px solid #ccc;
+  height: 400px; /* Ajuste conforme necessário */
+  margin: 10px 0px; /* Ajuste conforme necessário */
+}
+
+.column-left {
+  position: relative; /* Para que a linha seja posicionada em relação a este elemento */
+}
